@@ -418,21 +418,89 @@ h6 {
 
 /* Page Hero Section */
 .page-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/page-hero-bg.jpg');
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url('../images/page-hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
-    padding: 80px 0;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(94, 36, 219, 0.3), rgba(237, 107, 20, 0.3));
+    z-index: 1;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 .page-hero h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.page-hero h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-blue-dark), var(--color-red));
+    border-radius: 2px;
 }
 
 .page-hero p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design pour page-hero */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 80px 0;
+    }
+
+    .page-hero h2 {
+        font-size: 36px;
+    }
+
+    .page-hero p {
+        font-size: 18px;
+    }
 }
 
 /* Services Details Page */
