@@ -111,7 +111,6 @@ h6 {
 /* Top Navigation */
 .top-nav {
     background-color: var(--color-black);
-    border-bottom: 0.2px var(--color-dark-gray) solid;
     color: var(--color-white);
     padding: 10px 0;
 }
