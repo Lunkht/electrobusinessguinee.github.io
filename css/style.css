@@ -268,31 +268,86 @@ h6 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Section SmallAbout */
 .smallAbout {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.smallAbout-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 30px;
-    border-radius: 30px;
-    background: linear-gradient(to left, rgb(104, 43, 226), rgb(166, 2, 139));
-    color: white;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.smllTextWrp {
-    width: 50%;
+.smallAbout-text {
+    flex: 1;
 }
 
-/* Responsive Design pour smallAbout */
-@media (max-width: 768px) {
-    .smallAbout {
+.smallAbout-text h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.smallAbout-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.smallAbout-image {
+    flex: 1;
+}
+
+.smallAbout-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    .smallAbout-content {
         flex-direction: column;
-        margin: 20px;
-        padding: 20px;
+        text-align: center;
+        padding: 0 20px;
     }
 
-    .smllTextWrp {
+    .smallAbout-text h2 {
+        font-size: 2rem;
+    }
+
+    .smallAbout-text p {
+        font-size: 1rem;
+    }
+
+    .smallAbout-image {
         width: 100%;
-        text-align: center;
+        margin-top: 30px;
+    }
+
+    .smallAbout-image img {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .smallAbout {
+        padding: 40px 0;
+    }
+
+    .smallAbout-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .smallAbout-image img {
+        max-height: 300px;
     }
 }
 
