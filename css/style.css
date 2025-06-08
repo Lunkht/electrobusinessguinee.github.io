@@ -45,11 +45,11 @@
 :root {
     --color-black: #000000;
     --color-red: #ed6b14;
-    --color-blue: #116094;
-    --color-gray: #2c3e50;
+    --color-blue: #173a52;
+    --color-gray: #2f353b;
     --color-white: #ffffff;
     --color-light-gray: #f9f9f9;
-    --color-dark-gray: #1a1a1a;
+    --color-dark-gray: #272626;
     --color-blue-dark: #5e24db;
     --color-gray-light: #dddddd;
 }
