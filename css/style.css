@@ -221,16 +221,7 @@ h6 {
     align-items: center;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(36, 36, 35, 0.622), rgba(43, 46, 49, 0.643));
-    z-index: 1;
-}
+
 
 .hero .container {
     position: relative;
