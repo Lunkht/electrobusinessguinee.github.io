@@ -211,7 +211,6 @@ h6 {
     background: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.685)), url('../images/personnes-reparant.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: var(--color-white);
     text-align: center;
     padding: 190px 0;
@@ -265,6 +264,21 @@ h6 {
 .hero .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        padding: 120px 0;
+    }
+    
+    .hero h2 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
 }
 
 /* Section SmallAbout */
