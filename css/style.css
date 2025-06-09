@@ -208,7 +208,7 @@ h6 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.685)), url('../images/personnes-reparant.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.685)), url('../images/pilote_drone.png');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
@@ -226,7 +226,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(36, 36, 35, 0.622), rgba(43, 46, 49, 0.643));
+    background: linear-gradient(45deg, rgba(11, 11, 11, 0.435), rgba(43, 46, 49, 0.643));
     z-index: 1;
 }
 
