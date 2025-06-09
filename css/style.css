@@ -418,10 +418,11 @@ h6 {
 }
 
 .service-card img {
-    width: 100%;
+    width: 200px;
     height: 200px;
+    margin: 19px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 100%;
     margin-bottom: 25px;
 }
 
