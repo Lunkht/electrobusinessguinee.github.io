@@ -399,14 +399,14 @@ h6 {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 10px;
+    gap: 5px;
 }
 
 .service-card {
     background-color: var(--color-white);
     border: 0.4px solid var(--color-gray);
     padding: 0px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
@@ -421,7 +421,7 @@ h6 {
     width: 140px;
     height: 140px;
     margin: 19px;
-    border: 0.4px solid #000000;
+    border: 0.4px solid #777676;
     background-color: #ccc;
     object-fit: cover;
     border-radius: 100%;
