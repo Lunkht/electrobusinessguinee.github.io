@@ -404,7 +404,7 @@ h6 {
 
 .service-card {
     background-color: var(--color-white);
-    border: 0.4px solid var(--color-blue);
+    border: 0.4px solid var(--color-gray);
     padding: 0px;
     border-radius: 15px;
     text-align: center;
