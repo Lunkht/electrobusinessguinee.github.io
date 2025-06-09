@@ -421,7 +421,7 @@ h6 {
     width: 140px;
     height: 140px;
     margin: 19px;
-    border: 0.4px;
+    border: 0.4px solid #000000;
     background-color: #ccc;
     object-fit: cover;
     border-radius: 100%;
