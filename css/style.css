@@ -454,7 +454,7 @@ h6 {
 
 .formation-card {
     background-color: var(--color-white);
-    padding: 0px;
+    padding: 8px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease;
