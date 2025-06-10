@@ -405,9 +405,9 @@ h6 {
 
 .service-card {
     background-color: var(--color-white);
-    border: 0.4px solid var(--color-gray);
+    border: 0.2px solid var(--color-gray);
     padding: 0px;
-    border-radius: 5px;
+    border-radius: 2px;
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
