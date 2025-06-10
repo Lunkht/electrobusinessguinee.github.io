@@ -1959,3 +1959,17 @@ h6 {
         justify-content: center;
     }
 }
+
+/* Style pour le bouton d'inscription dans la navigation */
+.inscription-btn a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.inscription-btn a:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
