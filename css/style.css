@@ -285,7 +285,7 @@ h6 {
 /* Section SmallAbout */
 .smallAbout {
     padding: 60px 0;
-    background: linear-gradient(to left, rgb(35, 3, 175), rgb(7, 50, 245));
+    background: linear-gradient(to left, rgb(7, 50, 245), rgb(35, 3, 175));
     color: white;
 }
 
