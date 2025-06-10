@@ -490,13 +490,13 @@ h6 {
 .service-card h3 {
     font-size: 18px;
     margin: 10px;
-    color: var(--color-gray);
+    color: var(--color-black);
 }
 
 .service-card p {
     font-size: 14px;
     line-height: 1.6;
-    color: #666;
+    color: #000;
     margin: 10px;
 }
 
