@@ -1114,7 +1114,6 @@ h6 {
     width: 8px;
     height: 40px;
     background-color: var(--color-blue-dark);
-    border-radius: 4px;
 }
 
 .services h2::after,
@@ -1462,7 +1461,6 @@ h6 {
 
 .produit-card {
     background-color: var(--color-white);
-    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
