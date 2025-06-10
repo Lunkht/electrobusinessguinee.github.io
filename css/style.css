@@ -285,14 +285,14 @@ h6 {
 /* Section SmallAbout */
 .smallAbout {
     padding: 60px 0;
-    background: linear-gradient(to left, rgb(104, 43, 226), rgb(166, 2, 139));
+    background: linear-gradient(to left, rgb(35, 3, 175), rgb(7, 50, 245));
     color: white;
 }
 
 .smallAbout-content {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
