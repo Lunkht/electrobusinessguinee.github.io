@@ -203,7 +203,8 @@ h6 {
 }
 
 .main-nav ul li a:hover {
-    color: var(--color-white);
+    color: var(--color-red);
+    border-bottom: 2px solid var(--color-red);
 }
 
 /* Hero Section */
