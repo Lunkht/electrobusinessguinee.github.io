@@ -216,7 +216,7 @@ h6 {
     .main-nav ul li {
         margin-left: 8px;
     }
-    
+
     .main-nav ul li a {
         font-size: 12px;
         padding: 5px 6px;
@@ -293,7 +293,7 @@ h6 {
 .hero .container {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .hero h2 {
@@ -331,11 +331,11 @@ h6 {
         background-attachment: scroll;
         padding: 120px 0;
     }
-    
+
     .hero h2 {
         font-size: 36px;
     }
-    
+
     .hero p {
         font-size: 18px;
     }
@@ -548,7 +548,7 @@ h6 {
 
 /* Page Hero Section */
 .page-hero {
-    background: linear-gradient(to left, rgb(0, 42, 228), rgb(35, 3, 175)),url('../images/page-hero-bg.jpg');
+    background: linear-gradient(to left, rgb(0, 42, 228), rgb(35, 3, 175)), url('../images/page-hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -611,6 +611,7 @@ h6 {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -947,11 +948,11 @@ h6 {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
     }
-    
+
     .footer-section h3 {
         font-size: 16px;
     }
-    
+
     .footer-section ul li a {
         font-size: 13px;
     }
@@ -1389,6 +1390,7 @@ h6 {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1948,7 +1950,6 @@ h6 {
 /* Style pour le bouton d'inscription dans la navigation */
 .inscription-btn a {
     background-color: var(--color-blue);
-    color: white;
     padding: 8px 20px;
     border-radius: 25px;
     transition: all 0.3s ease;
