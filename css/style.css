@@ -517,7 +517,7 @@ h6 {
     border-radius: 1px;
     text-align: center;
     transition: transform 0.3s ease;
-    border: 0.4px solid var(--color-blue);
+    border: 0.4px solid var(--color-gray-light);
     position: relative;
     overflow: hidden;
 }
