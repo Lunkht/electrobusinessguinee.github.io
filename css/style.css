@@ -1464,7 +1464,7 @@ h6 {
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
-    border: 0.4px solid var(--color-red);
+    border: 0.4px solid var(--color-gray-light);
 }
 
 .produit-card:hover {
