@@ -14,43 +14,136 @@
 
 <body>
 
-    <!-- Main Header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo-ebg.png" alt="ElectroBusinessGuinee Logo" class="logo-img">
-            </div>
-            <button class="menu-toggle" aria-label="Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="formations.html">Formations</a></li>
-                    <li><a href="formation_cyber.html">Cyber Sécurité</a></li>
-                    <li><a href="voyage.html">Voyage</a></li>
-                    <li><a href="apropos.html">À Propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">E</div>
+            <span> <img src="images/logo-ebg.png" alt="ElectroBusinessGuinee Logo" class="logo-img">
+            </span>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="formations.html">Formations</a>
+            <a href="formation_cyber.html">Cyber Sécurité</a>
+            <a href="voyage.html">Voyage</a></li>
+            <a href="apropos.html">À Propos</a>
+            <a href="contact.html">Contact</a>
 
-                </ul>
-
-            </nav>
-            <a class="inscription-btn" href="inscription_form.html">S'inscrire</a>
-
+        </nav>
+        <div class="header-icons">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3"></path>
+                <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+            </svg>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h2>Bienvenue</h2>
-            <h2>Chez Electro Business Guinee</h2>
-            <p>Votre partenaire de confiance pour la formation et les services informatiques en Guinee</p>
-
+        <div class="hero-content">
+            <div class="price">Bienvenue</div>
+            <h1>Sur Electro Business Guinee</h1>
+            <div class="cta-buttons">
+                <button class="btn-primary">Commençons</button>
+                <a href="#video" class="btn-secondary">
+                    <div class="play-icon"></div>
+                    Regarder la vidéo
+                </a>
+            </div>
         </div>
-        <div class="right">
+        <div class="hero-image">
+            <svg width="500" height="500" viewBox="0 0 500 500">
+                <!-- iPhone simplified illustration -->
+                <defs>
+                    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4a90a4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2c5560;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Phone body -->
+                <rect x="150" y="50" width="200" height="400" rx="30" fill="url(#phoneGradient)" stroke="#5aa4ba"
+                    stroke-width="2" />
+                <!-- Screen -->
+                <rect x="160" y="70" width="180" height="360" rx="25" fill="#0a1f2e" />
+                <!-- Notch -->
+                <rect x="210" y="70" width="80" height="15" rx="7" fill="url(#phoneGradient)" />
+                <!-- Camera lenses -->
+                <circle cx="320" cy="150" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2" />
+                <circle cx="320" cy="200" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2" />
+                <circle cx="320" cy="250" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2" />
+                <circle cx="340" cy="270" r="12" fill="#1a3540" stroke="#5aa4ba" stroke-width="1" />
+                <!-- Camera details -->
+                <circle cx="320" cy="150" r="15" fill="#1a3540" />
+                <circle cx="320" cy="200" r="15" fill="#1a3540" />
+                <circle cx="320" cy="250" r="15" fill="#1a3540" />
+                <!-- Lens reflection -->
+                <circle cx="325" cy="145" r="5" fill="#5aa4ba" opacity="0.6" />
+                <circle cx="325" cy="195" r="5" fill="#5aa4ba" opacity="0.6" />
+                <circle cx="325" cy="245" r="5" fill="#5aa4ba" opacity="0.6" />
+            </svg>
+        </div>
+    </section>
 
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <path d="M38 18L24 8L10 18V38L24 48L38 38V18Z" />
+                    <path d="M24 8V48" />
+                    <path d="M10 18L38 38" />
+                    <path d="M10 38L38 18" />
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Formation</h3>
+                <p>Obtenir une certification reconue</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <circle cx="24" cy="24" r="18" />
+                    <path d="M24 12V24L32 28" />
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>100% Satisfait</h3>
+                <p>Nous avons eux plus de 100% de Satisfation de la par de nos etudients</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <circle cx="24" cy="24" r="18" />
+                    <path d="M24 12V24" />
+                    <path d="M24 24L30 30" />
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Support 24/7</h3>
+                <p>Contactez-nous 24 heures par jour</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <rect x="8" y="14" width="32" height="24" rx="2" />
+                    <path d="M8 22H40" />
+                    <circle cx="14" cy="28" r="1" fill="white" />
+                    <circle cx="20" cy="28" r="1" fill="white" />
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>100% Paiement sécurisé</h3>
+                <p>Vos paiements sont en sécurité avec nous</p>
+            </div>
         </div>
     </section>
     <!--
@@ -449,20 +542,21 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
-            
+
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Boulbinet, en face de Manden Couture, Conakry</p>
                     <p><i class="fas fa-phone"></i>612 33 44 11 / 625 31 58 87</p>
-               
-                <div class="footer-section">
-                    <h3>Suivez-nous</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
-                </div> </div>
+                </div>
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
@@ -502,7 +596,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-               
+
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 ElectroBusinessGuinee. Tous droits réservés.</p>
