@@ -22,7 +22,7 @@ display: block;
 
 .member {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 18px;
+    border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid #e3eafc;
@@ -43,8 +43,8 @@ display: block;
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     border-bottom: 2px solid #e3eafc;
 }
 
@@ -80,8 +80,8 @@ display: block;
     padding: 24px 18px 18px 18px;
     text-align: center;
     background: #fff;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
