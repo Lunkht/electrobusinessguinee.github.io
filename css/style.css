@@ -45,7 +45,7 @@
 :root {
     --color-black: #000000;
     --color-red: #ed6b14;
-    --color-blue: #0f01ab;
+    --color-blue: #121729;
     --color-gray: #2f353b;
     --color-white: #ffffff;
     --color-light-gray: #f9f9f9;
@@ -108,19 +108,6 @@ h6 {
     padding: 0 15px 0 50px;
 }
 
-/* Top Navigation */
-.top-nav {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    padding: 16px;
-}
-
-.top-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .contact-info span {
     margin-right: 20px;
 }
@@ -133,7 +120,7 @@ h6 {
 
 /* Main Header */
 .main-header {
-    background-color: var(--color-white);
+    background-color: var(--color-blue);
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -162,7 +149,7 @@ h6 {
 }
 
 .logo-img {
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
@@ -200,7 +187,7 @@ h6 {
 }
 
 .main-nav ul li a {
-    color: var(--color-black);
+    color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     font-weight: lighter;
@@ -267,16 +254,15 @@ h6 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.085), rgba(0, 0, 0, 0.117)), url('../images/entete.png');
+    background: var(--color-blue);
     background-size: cover;
     background-position: center;
     color: var(--color-white);
-    text-align: center;
-    padding: 190px 0;
-    height: 90vh;
-    position: relative;
     display: flex;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+    height: 90vh;;
 }
 
 .hero::before {
@@ -286,12 +272,10 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(11, 11, 11, 0.435), rgba(43, 46, 49, 0.643));
     z-index: 1;
 }
 
 .hero .container {
-    position: relative;
     z-index: 1;
     max-width: 600px;
 }
@@ -299,31 +283,13 @@ h6 {
 .hero h2 {
     font-size: 56px;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 14px;
     margin-bottom: 40px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     line-height: 1.6;
-}
-
-.hero .cta-button {
-    font-size: 18px;
-    padding: 18px 40px;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.hero .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -344,7 +310,7 @@ h6 {
 /* Section SmallAbout */
 .smallAbout {
     padding: 60px 0;
-    background: linear-gradient(to left, rgb(7, 50, 245), rgb(35, 3, 175));
+    background:  #121729;
     color: white;
 }
 
@@ -381,10 +347,9 @@ h6 {
 .smallAbout-image img {
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Media Queries pour la responsivité */
@@ -507,7 +472,7 @@ h6 {
 
 .formations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
@@ -548,7 +513,7 @@ h6 {
 
 /* Page Hero Section */
 .page-hero {
-    background: linear-gradient(to left, rgb(0, 42, 228), rgb(35, 3, 175)), url('../images/page-hero-bg.jpg');
+    background: var(--color-blue);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -565,7 +530,6 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(94, 36, 219, 0.3), rgba(237, 107, 20, 0.3));
     z-index: 1;
 }
 
@@ -581,7 +545,6 @@ h6 {
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
     display: inline-block;
 }
@@ -594,7 +557,6 @@ h6 {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, var(--color-blue-dark), var(--color-red));
     border-radius: 2px;
 }
 
@@ -602,7 +564,6 @@ h6 {
     font-size: 20px;
     line-height: 1.6;
     margin-top: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     opacity: 0.9;
 }
 
@@ -645,7 +606,6 @@ h6 {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
@@ -746,7 +706,6 @@ h6 {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-section h3 {
@@ -794,7 +753,6 @@ h6 {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item {
@@ -819,7 +777,6 @@ h6 {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -875,7 +832,6 @@ h6 {
 .map-container {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Call to Action Section */
@@ -906,7 +862,7 @@ h6 {
 
 /* Footer */
 .main-footer {
-    background-color: var(--color-gray);
+    background-color: var(--color-blue);
     color: var(--color-white);
     padding: 60px 0 20px;
 }
@@ -914,7 +870,7 @@ h6 {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 10px;
     padding: 40px 0;
 }
 
@@ -928,15 +884,11 @@ h6 {
     list-style: none;
 }
 
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
 .footer-section ul li a {
     color: var(--color-gray-light);
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-section ul li a:hover {
@@ -1283,7 +1235,6 @@ h6 {
     width: 90%;
     max-width: 1000px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: modalFadeIn 0.3s ease-out;
 }
 
@@ -1695,7 +1646,6 @@ h6 {
     background: var(--color-white);
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -1739,7 +1689,6 @@ h6 {
     padding: 30px;
     background-color: var(--color-white);
     border-radius: 1px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .formation-icon {
@@ -1815,7 +1764,6 @@ h6 {
     background: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .inscription-form .form-section {
@@ -1881,7 +1829,6 @@ h6 {
 .form-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
 }
 
 .checkbox-group {
@@ -1948,14 +1895,16 @@ h6 {
 }
 
 /* Style pour le bouton d'inscription dans la navigation */
-.inscription-btn a {
-    background-color: var(--color-blue);
+.inscription-btn {
+    background-color: var(--color-red);
     padding: 8px 20px;
-    border-radius: 25px;
+    border-radius: 1px;
+    text-decoration: none;
+    color: var(--color-white);
     transition: all 0.3s ease;
 }
 
-.inscription-btn a:hover {
+.inscription-btn:hover {
     background-color: var(--color-red);
     transform: translateY(-2px);
     color: #000;
@@ -1974,7 +1923,6 @@ h6 {
     background: #fff;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .auth-form .form-header {
@@ -2019,7 +1967,6 @@ h6 {
 .input-group input:focus,
 .input-group select:focus {
     border-color: var(--color-blue);
-    box-shadow: 0 0 0 3px rgba(23, 58, 82, 0.1);
     outline: none;
 }
 
@@ -2117,7 +2064,6 @@ h6 {
     background: #fff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     height: fit-content;
 }
 
@@ -2194,7 +2140,6 @@ h6 {
     background: #fff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .tab-content {
@@ -2248,10 +2193,6 @@ h6 {
     border: 1px solid #e1e5e9;
     border-radius: 10px;
     transition: all 0.3s ease;
-}
-
-.formation-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .formation-icon {

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets - iPhone 12 Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background-color: #1a1a1a;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #888;
+        }
+
+        nav a:first-child {
+            font-weight: 600;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .icon:hover {
+            opacity: 0.7;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 80px 80px 40px;
+            align-items: center;
+            min-height: calc(100vh - 100px);
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .price {
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-color: #fff;
+            color: #1a1a1a;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #e0e0e0;
+        }
+
+        .btn-secondary {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            color: #888;
+        }
+
+        .play-icon {
+            width: 16px;
+            height: 16px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .play-icon::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-30%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid #fff;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding: 40px 80px;
+            background: linear-gradient(to bottom, #1a1a1a 0%, #2a2a2a 100%);
+        }
+
+        .feature {
+            display: flex;
+            gap: 20px;
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+        }
+
+        .feature-icon svg {
+            width: 48px;
+            height: 48px;
+        }
+
+        .feature-content h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .feature-content p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1024px) {
+            header, .hero, .features {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">G</div>
+            <span>Gadgets</span>
+        </div>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#products">Produits</a>
+            <a href="#about">À propos</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3"></path>
+                <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+            </svg>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="price">À partir de 999$</div>
+            <h1>iPhone 12 Pro</h1>
+            <div class="cta-buttons">
+                <button class="btn-primary">Acheter maintenant</button>
+                <a href="#video" class="btn-secondary">
+                    <div class="play-icon"></div>
+                    Regarder la vidéo
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <svg width="500" height="500" viewBox="0 0 500 500">
+                <!-- iPhone simplified illustration -->
+                <defs>
+                    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4a90a4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2c5560;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Phone body -->
+                <rect x="150" y="50" width="200" height="400" rx="30" fill="url(#phoneGradient)" stroke="#5aa4ba" stroke-width="2"/>
+                <!-- Screen -->
+                <rect x="160" y="70" width="180" height="360" rx="25" fill="#0a1f2e"/>
+                <!-- Notch -->
+                <rect x="210" y="70" width="80" height="15" rx="7" fill="url(#phoneGradient)"/>
+                <!-- Camera lenses -->
+                <circle cx="320" cy="150" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2"/>
+                <circle cx="320" cy="200" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2"/>
+                <circle cx="320" cy="250" r="25" fill="#2c5560" stroke="#5aa4ba" stroke-width="2"/>
+                <circle cx="340" cy="270" r="12" fill="#1a3540" stroke="#5aa4ba" stroke-width="1"/>
+                <!-- Camera details -->
+                <circle cx="320" cy="150" r="15" fill="#1a3540"/>
+                <circle cx="320" cy="200" r="15" fill="#1a3540"/>
+                <circle cx="320" cy="250" r="15" fill="#1a3540"/>
+                <!-- Lens reflection -->
+                <circle cx="325" cy="145" r="5" fill="#5aa4ba" opacity="0.6"/>
+                <circle cx="325" cy="195" r="5" fill="#5aa4ba" opacity="0.6"/>
+                <circle cx="325" cy="245" r="5" fill="#5aa4ba" opacity="0.6"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <path d="M38 18L24 8L10 18V38L24 48L38 38V18Z"/>
+                    <path d="M24 8V48"/>
+                    <path d="M10 18L38 38"/>
+                    <path d="M10 38L38 18"/>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Livraison gratuite</h3>
+                <p>Livraison gratuite sur toutes les commandes aux États-Unis</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <circle cx="24" cy="24" r="18"/>
+                    <path d="M24 12V24L32 28"/>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>100% Satisfait ou remboursé</h3>
+                <p>Vous avez 10 jours pour retourner</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <circle cx="24" cy="24" r="18"/>
+                    <path d="M24 12V24"/>
+                    <path d="M24 24L30 30"/>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Support 24/7</h3>
+                <p>Contactez-nous 24 heures par jour</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                    <rect x="8" y="14" width="32" height="24" rx="2"/>
+                    <path d="M8 22H40"/>
+                    <circle cx="14" cy="28" r="1" fill="white"/>
+                    <circle cx="20" cy="28" r="1" fill="white"/>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>100% Paiement sécurisé</h3>
+                <p>Vos paiements sont en sécurité avec nous</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
