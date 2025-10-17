@@ -398,55 +398,80 @@ h6 {
 
 /* Services Details Page */
 .services-details {
-    padding: 60px 0;
+    padding: 80px 0;
+    background-color: var(--color-light-gray);
+}
+
+.services-details .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
 .service-item {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 40px;
-    padding: 30px;
+    margin-bottom: 0;
+    padding: 40px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .service-icon {
-    flex: 0 0 80px;
-    text-align: center;
-    margin-right: 30px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .service-icon i {
     font-size: 40px;
-    color: #3498db;
+    color: var(--color-white);
 }
 
 .service-content h3 {
-    color: #2c3e50;
+    color: var(--color-gray);
     margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .service-content ul {
     list-style: none;
     margin-top: 15px;
+    padding: 0;
 }
 
 .service-content ul li {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
+    color: #555;
 }
 
 .service-content ul li:before {
     content: "•";
-    color: #3498db;
+    color: var(--color-red);
     position: absolute;
     left: 0;
 }
 
 /* Formations Details Page */
 .formations-details {
-    padding: 60px 0;
+    padding: 80px 0;
+    background-color: var(--color-light-gray);
 }
 
 .formation-item {
@@ -455,23 +480,25 @@ h6 {
     margin-bottom: 40px;
     padding: 0px;
     background-color: #fff;
-    border-radius: 1px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 40px;
+}
+
+.formation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .formation-icon {
-    flex: 0 0 80px;
-    text-align: center;
-    margin-right: 30px;
-}
-
-.formation-icon i {
-    font-size: 40px;
-    color: #3498db;
+    /* Styles already defined in hero.css and are sufficient */
 }
 
 .formation-content h3 {
-    color: #2c3e50;
+    color: var(--color-gray);
     margin-bottom: 15px;
+    font-size: 22px;
 }
 
 .formation-content ul {
@@ -483,11 +510,12 @@ h6 {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
+    color: #555;
 }
 
 .formation-content ul li:before {
     content: "•";
-    color: #3498db;
+    color: var(--color-red);
     position: absolute;
     left: 0;
 }
@@ -500,19 +528,25 @@ h6 {
 
 /* About Page */
 .about-content {
-    padding: 60px 0;
+    padding: 80px 0;
+    background-color: var(--color-light-gray);
 }
 
 .about-section {
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 40px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-section h3 {
-    color: #2c3e50;
+    color: var(--color-gray);
     margin-bottom: 20px;
+    font-size: 24px;
+}
+.about-section p, .about-section ul li {
+    color: #555;
 }
 
 .values-grid {
@@ -525,19 +559,37 @@ h6 {
 .value-item {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: var(--color-light-gray);
+    border-radius: 15px;
+    border: 1px solid #eee;
 }
 
 .value-item i {
     font-size: 30px;
-    color: #3498db;
+    color: var(--color-red);
     margin-bottom: 15px;
 }
 
 .value-item h4 {
     color: #2c3e50;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .services-details, .formations-details, .about-content {
+        padding: 40px 0;
+    }
+    .service-item, .formation-item, .about-section {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .service-icon, .formation-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .service-content, .formation-content {
+        width: 100%;
+    }
 }
 
 /* Contact Page */
@@ -1270,26 +1322,30 @@ h6 {
 .vente-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 10px;
+    gap: 30px;
     margin-top: 40px;
 }
 
 .produit-card {
     background-color: var(--color-white);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
-    border: 0.4px solid var(--color-gray-light);
+    border: 1px solid var(--color-gray-light);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .produit-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .produit-badge {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    left: 15px;
     background-color: var(--color-red);
     color: var(--color-white);
     padding: 8px 15px;
@@ -1307,19 +1363,28 @@ h6 {
     background-color: var(--color-gray);
 }
 
+.produit-image-container {
+    background-color: var(--color-light-gray);
+    padding: 20px;
+    text-align: center;
+}
+
 .produit-card img {
-    width: 100%;
+    width: auto;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .produit-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .produit-info {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .produit-info h3 {
@@ -1333,6 +1398,7 @@ h6 {
     font-size: 14px;
     margin-bottom: 15px;
     line-height: 1.4;
+    flex-grow: 1;
 }
 
 .produit-prix {
@@ -1363,13 +1429,19 @@ h6 {
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
     transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 .acheter-btn:hover {
     background-color: var(--color-blue);
-    transform: translateY(-2px);
+}
+
+.produit-card:hover .acheter-btn {
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
 }
 
 /* Responsive Design */
@@ -1395,7 +1467,7 @@ h6 {
 /* Partenaires Section */
 .partenaires {
     padding: 80px 0;
-    background-color: var(--color-white);
+    background-color: var(--color-light-gray);
 }
 
 .partenaires h2 {
@@ -1412,39 +1484,40 @@ h6 {
 .partenaires-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 40px;
     margin-top: 40px;
+    align-items: center;
 }
 
 .partenaire-card {
     background-color: var(--color-white);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-gray-light);
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .partenaire-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .partenaire-card img {
-    max-width: 120px;
+    max-width: 130px;
     height: auto;
     filter: grayscale(100%);
+    opacity: 0.7;
     transition: all 0.3s ease;
 }
 
 .partenaire-card:hover img {
     filter: grayscale(0%);
-    transform: scale(1.1);
-}
-
-.partenaire-card h3 {
-    font-size: 18px;
-    color: var(--color-gray);
-    margin: 0;
-    font-weight: 600;
+    opacity: 1;
 }
 
 /* Responsive Design */
