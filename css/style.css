@@ -203,11 +203,10 @@ h6 {
     background-color: var(--color-light-gray);
 }
 
-.services h2,
-.formations h2 {
+.services h2{
     text-align: left;
     margin-bottom: 50px;
-    color: var(--color-gray);
+    color: var(--color-white);
     font-size: 42px;
     font-weight: 700;
     position: relative;
@@ -222,18 +221,6 @@ h6 {
     font-weight: 700;
     position: relative;
     padding-left: 20px;
-}
-.services h2::before,
-.formations h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 40px;
-    background-color: var(--color-blue);
-    border-radius: 4px;
 }
 
 .services-grid {
@@ -677,51 +664,103 @@ h6 {
 
 /* Footer */
 .main-footer {
-    background-color: var(--color-blue);
+    background-color: #111;
     color: var(--color-white);
-    padding: 60px 0 20px;
+    padding: 80px 0 0;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding-bottom: 60px;
 }
 
 .footer-section h3 {
     margin-bottom: 20px;
     color: var(--color-white);
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-red);
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.footer-section p i {
+    margin-right: 10px;
+    color: var(--color-red);
 }
 
 .footer-section ul {
     list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
 }
 
 .footer-section ul li a {
     color: var(--color-gray-light);
     text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 12px;
+    transition: all 0.3s ease;
+    font-size: 15px;
 }
 
 .footer-section ul li a:hover {
     color: var(--color-white);
+    padding-left: 5px;
+}
+
+.social-links-footer {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links-footer a {
+    color: var(--color-white);
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links-footer a:hover {
+    background-color: var(--color-red);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #aaa;
 }
 
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
-    }
-
-    .footer-section h3 {
-        font-size: 16px;
-    }
-
-    .footer-section ul li a {
-        font-size: 13px;
     }
 }
 
@@ -780,13 +819,17 @@ h6 {
 .testimonial-card {
     background-color: var(--color-white);
     padding: 30px;
-    border-radius: 1px;
-    transition: transform 0.3s ease;
-    border: 0.4px solid var(--color-gray-light);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--color-gray-light);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-content {
@@ -795,10 +838,13 @@ h6 {
 }
 
 .testimonial-content i {
+    position: absolute;
+    top: -15px;
+    left: -10px;
     color: var(--color-blue-dark);
-    font-size: 24px;
-    margin-bottom: 15px;
-    display: block;
+    font-size: 48px;
+    opacity: 0.1;
+    z-index: 0;
 }
 
 .testimonial-content p {
@@ -806,12 +852,14 @@ h6 {
     line-height: 1.6;
     color: var(--color-gray);
     font-style: italic;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 15px;
+    margin-top: auto;
 }
 
 .testimonial-author img {
@@ -900,54 +948,32 @@ h6 {
 /* Newsletter Section */
 .newsletter {
     padding: 80px 0;
-    background-color: var(--color-light-gray);
+    background-color: var(--color-blue);
 }
 
 .newsletter h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
-    color: var(--color-gray);
+    color: var(--color-gray-light);
     font-size: 42px;
     font-weight: 700;
     position: relative;
-    padding-left: 20px;
 }
 
-.newsletter h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 40px;
-    background-color: var(--color-red);
-    border-radius: 4px;
-}
 
-.newsletter .section-description {
-    text-align: left;
-    margin: -30px 0 50px;
-    padding-left: 20px;
-    max-width: 800px;
-}
 
 .newsletter-content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-top: 40px;
-    background-color: var(--color-white);
-    padding: 40px;
-    border-radius: 15px;
-    border: 0.4px solid var(--color-red);
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 0 20px;
 }
 
 .newsletter-form {
     flex: 1;
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 .newsletter-form .form-group {
@@ -957,7 +983,7 @@ h6 {
 
 .newsletter-form input {
     width: 100%;
-    padding: 15px;
+    padding: 18px 20px;
     border: 1px solid var(--color-gray-light);
     border-radius: 8px;
     font-size: 16px;
@@ -971,7 +997,7 @@ h6 {
 
 .newsletter-form .submit-button {
     background-color: var(--color-blue-dark);
-    color: var(--color-white);
+    color: var(--color-white) !important;
     padding: 15px 30px;
     border: none;
     border-radius: 8px;
@@ -985,35 +1011,12 @@ h6 {
 }
 
 .newsletter-form .submit-button:hover {
-    background-color: var(--color-blue);
+    background-color: var(--color-red);
     transform: translateY(-2px);
-}
-
-.newsletter-info {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.newsletter-info i {
-    font-size: 48px;
-    color: var(--color-blue-dark);
-    margin-bottom: 20px;
-}
-
-.newsletter-info p {
-    font-size: 18px;
-    color: var(--color-gray);
-    line-height: 1.6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .newsletter-content {
-        flex-direction: column;
-        padding: 30px;
-    }
-
     .newsletter-form {
         flex-direction: column;
         width: 100%;
@@ -1022,10 +1025,6 @@ h6 {
     .newsletter-form .submit-button {
         width: 100%;
         justify-content: center;
-    }
-
-    .newsletter-info {
-        padding: 20px 0 0;
     }
 }
 
@@ -1357,18 +1356,7 @@ h6 {
     font-weight: 700;
     position: relative;
     padding-left: 20px;
-}
 
-.partenaires h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 40px;
-    background-color: var(--color-blue);
-    border-radius: 4px;
 }
 
 .partenaires-grid {
