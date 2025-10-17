@@ -61,29 +61,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
 
-    menuToggle.addEventListener('click', function() {
-        mainNav.classList.toggle('active');
-        // Change l'icône du menu
-        const icon = menuToggle.querySelector('i');
-        if (mainNav.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    });
-
-    // Ferme le menu quand on clique sur un lien
-    const navLinks = document.querySelectorAll('.main-nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mainNav.classList.remove('active');
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            // Change l'icône du menu
             const icon = menuToggle.querySelector('i');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         });
-    });
+
+        // Ferme le menu quand on clique sur un lien
+        const navLinks = document.querySelectorAll('.main-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    }
 
     // Ferme le menu quand on clique en dehors
     document.addEventListener('click', function(event) {

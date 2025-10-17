@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Electro Business Guinée</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
+
 <body>
 
-    <!-- Main Header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo-ebg.png" alt="ElectroBusinessGuinee Logo" class="logo-img">
+    <header>
+        <div class="logo">
+            <img src="../images/logo-ebg.png" alt="ElectroBusinessGuinee Logo" class="logo-img">
+        </div>
+        <nav class="main-nav">
+            <a href="../index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="formations.html">Formations</a>
+            <a href="formation_cyber.html">Cyber Sécurité</a>
+            <a href="voyage.html">Voyage</a>
+            <a href="apropos.html">À Propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="header-icons">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3"></path>
+                    <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+                </svg>
             </div>
-            <button class="menu-toggle" aria-label="Menu">
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
                 <i class="fas fa-bars"></i>
             </button>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="formations.html">Formations</a></li>
-                    <li><a href="formation_cyber.html">Cyber Sécurité</a></li>
-                    <li><a href="voyage.html">Voyage</a></li>
-                    <li><a href="apropos.html">À Propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -36,63 +52,63 @@
     <section class="page-hero">
         <div class="container">
             <h2>Contactez-nous</h2>
-            <p>Nous sommes là pour répondre à toutes vos questions</p>
         </div>
     </section>
 
     <!-- Contact Content Section -->
     <section class="contact-content">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Information -->
-                <div class="contact-info-section">
-                    <h3>Nos Coordonnées</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Adresse</h4>
-                            <p>Conakry, Guinée</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Téléphone</h4>
-                            <p>+224 612 33 44 11 / +224 625 31 58 87</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>contact@electrobusinessguinee.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Heures d'ouverture</h4>
-                            <p>Lundi - Vendredi: 8h00 - 18h00</p>
-                            <p>Samedi: 9h00 - 13h00</p>
-                        </div>
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Adresse</h4>
+                        <p>Boulbinet, en face de Manden Couture, Conakry</p>
                     </div>
                 </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Téléphone</h4>
+                        <p>+224 612 33 44 11 <br> +224 625 31 58 87</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@electrobusinessguinee.com</p>
+                        <p>contact@electrobusinessguinee.com</p>
 
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Heures d'ouverture</h4>
+                        <p>Lundi - Samedi: 8h00 - 18h00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-grid">
                 <!-- Contact Form -->
                 <div class="contact-form-section">
                     <h3>Envoyez-nous un message</h3>
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
                             <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="Ex: jean.dupont@email.com"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Optionnel">
                         </div>
                         <div class="form-group">
                             <label for="subject">Sujet</label>
@@ -110,17 +126,12 @@
                         <button type="submit" class="submit-button">Envoyer</button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </section>
+                <!-- Map Section -->
+                <div class="map-section">
+                    <h3>Notre Localisation</h3>
+                    <div id="map" class="map-container"></div>
+                </div>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h3>Notre Localisation</h3>
-            <div class="map-container">
-                <!-- Intégrer une carte Google Maps ici -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8272343794474!2d-13.712687924264!3d9.641605989366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1a9d2c0c0c0c0c%3A0x0!2sConakry%2C%20Guin%C3%A9e!5e0!3m2!1sfr!2sfr!4v1647881234567!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -129,20 +140,21 @@
     <footer class="main-footer">
         <div class="container">
             <div class="footer-grid">
-            
+
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Boulbinet, en face de Manden Couture, Conakry</p>
                     <p><i class="fas fa-phone"></i>612 33 44 11 / 625 31 58 87</p>
-               
-                <div class="footer-section">
-                    <h3>Suivez-nous</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
-                </div> </div>
+                </div>
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
@@ -182,7 +194,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-               
+
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 ElectroBusinessGuinee. Tous droits réservés.</p>
@@ -190,12 +202,14 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
         // Gestion du formulaire de contact
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Récupération des données du formulaire
             const formData = {
                 name: document.getElementById('name').value,
@@ -207,13 +221,25 @@
 
             // Ici, vous pouvez ajouter le code pour envoyer les données à votre serveur
             console.log('Données du formulaire:', formData);
-            
+
             // Afficher un message de confirmation
             alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-            
+
             // Réinitialiser le formulaire
             this.reset();
         });
+
+        // Initialisation de la carte Leaflet
+        const map = L.map('map').setView([9.53795, -13.67729], 15); // Coordonnées de Conakry
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        const marker = L.marker([9.53795, -13.67729]).addTo(map);
+        marker.bindPopup("<b>ElectroBusinessGuinee</b><br>Boulbinet, Conakry").openPopup();
+
     </script>
 </body>
-</html> 
+
+</html>
