@@ -15,7 +15,7 @@
      justify-content: space-between;
      align-items: center;
      padding: 20px 80px;
-     background-color: #1a1a1a;
+     background-color: #121216;
      position: relative;
  }
 
@@ -85,7 +85,7 @@
      padding: 80px 120px 40px;
      align-items: center;
      min-height: calc(70vh - 100px);
-     background: linear-gradient(to bottom, #1a1a1a, #121729);
+     background: linear-gradient(to bottom, #140028, #121729);
  }
 
  .hero-content {
@@ -313,6 +313,14 @@
      color: #6EE7F8;
      font-weight: 500;
      margin-bottom: 15px;
+ }
+
+ #formations h2 {
+    color: #fff;
+ }
+
+ #formations .section-description {
+    color: #aaa;
  }
  
  @media (max-width: 992px) {

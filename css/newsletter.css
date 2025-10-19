@@ -7,6 +7,16 @@
         .newsletter h2 {
             font-size: 42px;
             font-weight: 700;
+            margin-bottom: 20px; /* Adjusted margin */
+            background: -webkit-linear-gradient(45deg, #6EE7F8, #4F46E5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .newsletter .section-description {
+            text-align: center;
+            color: #ccc; /* Lighter color for better contrast */
+            font-size: 1.1em; /* Slightly larger font */
             margin-bottom: 40px;
         }
 

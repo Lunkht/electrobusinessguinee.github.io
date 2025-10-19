@@ -426,8 +426,6 @@ h6 {
     padding: 40px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
@@ -498,7 +496,7 @@ h6 {
 
 .formation-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
 }
 
 .formation-icon {
@@ -547,7 +545,6 @@ h6 {
     padding: 40px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-section h3 {
@@ -622,7 +619,6 @@ h6 {
     background-color: var(--color-white);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-item {
@@ -652,7 +648,6 @@ h6 {
     padding: 40px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .form-group {
@@ -707,7 +702,6 @@ h6 {
     background-color: #fff;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .map-section h3 {
@@ -940,7 +934,7 @@ h6 {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -1072,6 +1066,14 @@ h6 {
     position: relative;
 }
 
+.newsletter .section-description {
+    text-align: center;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-gray-light);
+}
+
 
 
 .newsletter-content {
@@ -1083,7 +1085,7 @@ h6 {
 .newsletter-form {
     flex: 1;
     display: flex;
-    gap: 20px;
+    gap: 0;
     align-items: center;
     width: 100%;
 }
@@ -1096,10 +1098,11 @@ h6 {
 .newsletter-form input {
     width: 100%;
     padding: 18px 20px;
-    border: 1px solid var(--color-gray-light);
-    border-radius: 8px;
+    border-radius: 0px 0 0 0px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+    border: none;
+    background: #272626;
 }
 
 .newsletter-form input:focus {
@@ -1111,8 +1114,6 @@ h6 {
     background-color: var(--color-blue-dark);
     color: var(--color-white) !important;
     padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
@@ -1348,7 +1349,7 @@ h6 {
 }
 
 .produit-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-4px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -1513,7 +1514,7 @@ h6 {
 }
 
 .partenaire-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
