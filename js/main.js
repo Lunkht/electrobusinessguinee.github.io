@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Données pour les modales de formation
-    const formationsData = {
+    const trainingsData = {
         word: {
             title: 'Formation Microsoft Word',
             image: 'images/formation word.png',
@@ -78,22 +78,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    const formationModal = document.getElementById('formationModal');
-    const formationCards = document.querySelectorAll('.formation-card');
+    const trainingModal = document.getElementById('trainingModal');
+    const trainingCards = document.querySelectorAll('.training-card');
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
-    formationCards.forEach(card => {
+    trainingCards.forEach(card => {
         card.addEventListener('click', () => {
-            const formationId = card.dataset.id;
-            const data = formationsData[formationId];
+            const trainingId = card.dataset.id;
+            const data = trainingsData[trainingId];
 
-            if (data && formationModal) {
-                document.getElementById('formationModalTitle').textContent = data.title;
-                document.getElementById('formationModalImage').src = data.image;
-                document.getElementById('formationModalDescription').textContent = data.description;
-                document.getElementById('formationModalDuration').textContent = data.duration;
+            if (data && trainingModal) {
+                document.getElementById('trainingModalTitle').textContent = data.title;
+                document.getElementById('trainingModalImage').src = data.image;
+                document.getElementById('trainingModalDescription').textContent = data.description;
+                document.getElementById('trainingModalDuration').textContent = data.duration;
 
-                const programList = document.getElementById('formationModalProgram');
+                const programList = document.getElementById('trainingModalProgram');
                 programList.innerHTML = '';
                 data.program.forEach(item => {
                     const li = document.createElement('li');
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     programList.appendChild(li);
                 });
 
-                const prerequisitesList = document.getElementById('formationModalPrerequisites');
+                const prerequisitesList = document.getElementById('trainingModalPrerequisites');
                 prerequisitesList.innerHTML = '';
                 data.prerequisites.forEach(item => {
                     const li = document.createElement('li');
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     prerequisitesList.appendChild(li);
                 });
 
-                formationModal.style.display = 'block';
+                trainingModal.style.display = 'block';
             }
         });
     });
@@ -126,5 +126,4 @@ document.addEventListener('DOMContentLoaded', function () {
             event.target.style.display = 'none';
         }
     });
-
 });

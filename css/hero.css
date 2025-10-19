@@ -109,8 +109,8 @@
      color: #333;
  }
 
- .price {
-     color: #888;
+ .welcome-text {
+     color: #ff8800;
      font-size: 18px;
      margin-bottom: 20px;
  }
@@ -315,12 +315,15 @@
      margin-bottom: 15px;
  }
 
- #formations h2 {
-    color: #fff;
+ #trainings {
+    background-color: #fff;
+ }
+ #trainings h2 {
+    color: #2c3e50; /* Couleur foncée pour le titre sur fond blanc */
  }
 
- #formations .section-description {
-    color: #aaa;
+ #trainings .section-description {
+    color: #666; /* Gris foncé pour la lisibilité sur fond blanc */
  }
  
  @media (max-width: 992px) {
