@@ -15,7 +15,7 @@
      justify-content: space-between;
      align-items: center;
      padding: 20px 80px;
-     background-color: #121216;
+     background-color: #eeeeee;
      position: relative;
  }
 
@@ -33,7 +33,7 @@
  }
 
  nav a {
-     color: #fff;
+     color: #140028;
      text-decoration: none;
      font-size: 16px;
      transition: color 0.3s;
@@ -82,14 +82,17 @@
  .hero {
      display: grid;
      grid-template-columns: 1fr 1fr;
-     padding: 80px 120px 40px;
      align-items: center;
+     height: 87vh;
      min-height: calc(70vh - 100px);
-     background: linear-gradient(to bottom, #140028, #121729);
+     background: linear-gradient(to left, #140028e2, #a20773f9), url('../images/informaticien.png');
+        background-size: cover;
+        background-position: bottom;
  }
 
  .hero-content {
      max-width: 600px;
+     margin-left: 30px;
  }
 
  .logo {
@@ -194,8 +197,8 @@
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      gap: 40px;
-     padding: 40px 80px;
-     background: linear-gradient(to bottom, #121729, #1a1a1a);
+     grid-column: 1 / -1;
+     margin: 24px;
  }
 
  .feature {
@@ -356,12 +359,14 @@
          border-bottom: 1px solid #333;
      }
  
-     .hero,
-     .features {
-         padding-left: 40px;
-         padding-right: 40px;
-     }
- }
+         .hero {
+             padding-left: 40px;
+             padding-right: 40px;
+         }
+         .features {
+             padding-left: 0;
+             padding-right: 0;
+         } }
 
  @media (max-width: 768px) {
      header {
@@ -374,11 +379,10 @@
          padding: 40px 20px;
      }
 
-     .features {
-         grid-template-columns: 1fr;
-         padding: 40px 20px;
-     }
-
+         .features {
+             grid-template-columns: 1fr;
+             padding: 40px 0;
+         }
      h1 {
          font-size: 48px;
      }
