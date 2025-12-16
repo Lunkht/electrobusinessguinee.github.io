@@ -543,8 +543,7 @@ body>header nav.main-nav a:hover::after {
 /* ========================================
    FORMATIONS DETAILS SECTION
    ======================================== */
-.formations-details,
-.trainings-details {
+.formations-details {
     padding: 80px 0;
     background-color: #f8f9fa;
 }

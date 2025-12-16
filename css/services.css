@@ -1,45 +1,43 @@
 /* Service Cards Icon Styles */
 
 .service-card {
-    background: #ffffff;
     border-radius: 16px;
-    padding: 32px 18px 24px 18px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(0,0,0,0.06);
+    padding: 24px 20px;
+    text-align: left;
     margin-bottom: 10px;
 }
 
 .service-card:hover {
-    transform: translateY(-3    px) scale(1.04);
+    transform: translateY(-3px) scale(1.02);
 }
 
 .service-card i {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #195494;
     background: #f5f7fa;
     border-radius: 50%;
     padding: 18px;
-    font-size: 2.5em;
-    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    font-size: 2em;
     transition: transform 0.3s, background 0.3s;
+    display: inline-block;
 }
 
 .service-card:hover i {
-    transform: scale(1.13) rotate(-6deg);
+    transform: scale(1.1) rotate(-6deg);
     background: #e3eafc;
 }
 
 .service-card h3 {
-    color: #195494;
-    font-size: 1.15em;
-    font-weight: 700;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 400;
     margin-bottom: 8px;
     margin-top: 0;
 }
 
 .service-card p {
-    color: #444;
-    font-size: 0.98em;
+    color: #555;
+    font-size: 0.95em;
     margin-bottom: 0;
+    line-height: 1.5;
 }

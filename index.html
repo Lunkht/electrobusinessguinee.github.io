@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/whatsapp-chat.css">
     <style>
         .partenaire-card .partenaire-name {
             font-weight: bold;
@@ -57,73 +58,7 @@
             </div>
 
             <div class="hero-image">
-                <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Graphique réseau neuronal">
-                    <defs>
-                        <linearGradient id="nodeGradient" x1="0" x2="1">
-                            <stop offset="0%" stop-color="#6EE7F8" />
-                            <stop offset="100%" stop-color="#4F46E5" />
-                        </linearGradient>
-                        <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#A78BFA" /> <!-- Violet -->
-                            <stop offset="50%" stop-color="#4F46E5" /> <!-- Indigo -->
-                            <stop offset="100%" stop-color="#6EE7F8" /> <!-- Cyan -->
-                        </linearGradient>
-                        <linearGradient id="streamGradient" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#A78BFA" />
-                            <stop offset="100%" stop-color="#6EE7F8" />
-                        </linearGradient>
-                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                            <feGaussianBlur stdDeviation="6" result="coloredBlur" />
-                            <feMerge>
-                                <feMergeNode in="coloredBlur" />
-                                <feMergeNode in="SourceGraphic" />
-                            </feMerge>
-                        </filter>
-                    </defs>
-
-                    <!-- Animation de flux de données numériques -->
-                    <g fill="url(#circuitGradient)" filter="url(#glow)">
-                        <script>
-                            const container = document.currentScript.parentNode;
-                            const numParticles = 50;
-                            for (let i = 0; i < numParticles; i++) {
-                                const particle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                                const r = Math.random() * 3 + 2; // Rayon entre 2 et 5 (au lieu de 1 à 3)
-                                const x = Math.random() * 500;
-                                const y = Math.random() * 500;
-                                const dur = Math.random() * 10 + 8; // Durée entre 8s et 18s (plus lent)
-                                const delay = Math.random() * -12; // Délai négatif pour un départ décalé
-
-                                particle.setAttribute("r", r);
-                                particle.setAttribute("cx", x);
-                                particle.setAttribute("cy", y);
-
-                                const animate = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-                                animate.setAttribute("attributeName", "cy");
-                                animate.setAttribute("from", y - 100);
-                                animate.setAttribute("to", y + 100);
-                                animate.setAttribute("dur", `${dur}s`);
-                                animate.setAttribute("begin", `${delay}s`);
-                                animate.setAttribute("repeatCount", "indefinite");
-                                animate.setAttribute("values", `${y};${y + Math.random() * 100 - 50};${y}`);
-                                animate.setAttribute("keyTimes", "0;0.5;1");
-
-                                const animateOpacity = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-                                animateOpacity.setAttribute("attributeName", "opacity");
-                                animateOpacity.setAttribute("values", "0;0.8;0");
-                                animateOpacity.setAttribute("dur", `${dur}s`);
-                                animateOpacity.setAttribute("begin", `${delay}s`);
-                                animateOpacity.setAttribute("repeatCount", "indefinite");
-
-                                particle.appendChild(animate);
-                                particle.appendChild(animateOpacity);
-                                container.appendChild(particle);
-                            }
-                        </script>
-                    </g>
-
-                </svg>
+                <img src="images/elect2_Plan de travail 1.svg" alt="" srcset="">
             </div>
         </div>
         <section class="features">
@@ -188,130 +123,141 @@
     <!-- Section Services -->
     <section class="services" id="services">
         <div class="container">
-            <h2>Nos Services</h2>
-            <p class="section-description">Découvrez notre gamme complète de services informatiques professionnels,
-                conçus pour répondre à tous vos besoins numériques.</p>
+            <h2>Services</h2>
             <div class="services-grid">
                 <div class="service-card" data-id="maintenance">
                     <i class="fas fa-tools fa-3x"></i>
-                    <h3>Maintenance Informatique Générale</h3>
-                    <p>Réparation et maintenance d'ordinateurs et smartphones</p>
+                    <h3>Maintenance Informatique</h3>
+                    <p>Diagnostic, réparation et optimisation de vos ordinateurs et smartphones par nos experts
+                        certifiés.</p>
                 </div>
                 <div class="service-card" data-id="vente">
                     <i class="fas fa-shopping-cart fa-3x"></i>
                     <h3>Vente d'Équipements</h3>
-                    <p>Outils et équipements informatiques de qualité</p>
+                    <p>Large gamme d'ordinateurs, accessoires et périphériques de marques reconnues à prix compétitifs.
+                    </p>
                 </div>
                 <div class="service-card" data-id="informatique">
-                    <i class="fas fa-shopping-cart fa-3x"></i>
-                    <h3>Formation informatique</h3>
-                    <p>Maintriser les outils informatiques</p>
+                    <i class="fas fa-laptop fa-3x"></i>
+                    <h3>Formation Informatique</h3>
+                    <p>Apprenez à maîtriser Word, Excel, Windows et les outils bureautiques essentiels pour votre
+                        carrière.</p>
                 </div>
                 <div class="service-card" data-id="voyage">
                     <i class="fas fa-plane fa-3x"></i>
                     <h3>Assistance Voyage</h3>
-                    <p>Obtention de visa et billets d'avion</p>
+                    <p>Accompagnement complet : obtention de visa, réservation de billets et conseils personnalisés.</p>
                 </div>
                 <div class="service-card" data-id="ia">
                     <i class="fas fa-brain fa-3x"></i>
-                    <h3>Formation en Intelligence artificielle</h3>
-                    <p>Vous Former en Intelligence artificielle</p>
+                    <h3>Formation Intelligence Artificielle</h3>
+                    <p>Découvrez les fondamentaux de l'IA, le Machine Learning et leurs applications concrètes.</p>
                 </div>
                 <div class="service-card" data-id="english">
                     <i class="fas fa-language fa-3x"></i>
                     <h3>Formation en Anglais</h3>
-                    <p>Formation en Anglais, professionnel...</p>
+                    <p>Cours adaptés à tous niveaux : anglais courant, professionnel et préparation aux certifications.
+                    </p>
                 </div>
                 <div class="service-card" data-id="internet">
                     <i class="fas fa-wifi fa-3x"></i>
-                    <h3>Access Internet</h3>
-                    <p>Acces a Internet dans nos locaux pour vous faciliter vos navigations en toute discrétion et
-                        sécurité</p>
+                    <h3>Accès Internet</h3>
+                    <p>Connexion haut débit dans nos locaux climatisés, idéal pour travailler ou naviguer en toute
+                        sécurité.</p>
                 </div>
                 <div class="service-card" data-id="print">
                     <i class="fas fa-print fa-3x"></i>
                     <h3>Impression Numérique</h3>
-                    <p>Impression de qualité professionnelle dans tous les formats</p>
+                    <p>Impression haute qualité : documents, affiches, cartes de visite et tous formats professionnels.
+                    </p>
                 </div>
                 <div class="service-card" data-id="web">
                     <i class="fas fa-code fa-3x"></i>
-                    <h3>Création site web</h3>
-                    <p>Création et hébergement de site web</p>
+                    <h3>Création de Sites Web</h3>
+                    <p>Conception de sites modernes et responsive avec hébergement, maintenance et référencement inclus.
+                    </p>
                 </div>
                 <div class="service-card" data-id="electromenager">
                     <i class="fas fa-plug fa-3x"></i>
                     <h3>Électroménager</h3>
-                    <p>Réparation et Maintenance</p>
+                    <p>Réparation et entretien de vos appareils électroménagers par des techniciens qualifiés.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Formations Section -->
-    <section class="trainings" id="trainings">
+    <!-- Section Formations -->
+    <section class="formations" id="formations">
         <div class="container">
-            <h2>Nos Formations</h2>
-            <p class="section-description">Train for tomorrow's technologies with our practical learning programs
-                adapted to all levels.</p>
-            <div class="trainings-grid">
-                <div class="training-card" data-id="word">
+            <h2>Formations</h2>
+            <p class="section-description">Développez vos compétences avec nos programmes de formation professionnelle
+                adaptés à tous les niveaux.</p>
+            <div class="formations-grid">
+                <div class="formation-card" data-id="word">
                     <img src="images/formation word.png" alt="Microsoft Word">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Microsoft Word</h3>
-                        <p>Traitement de texte professionnel</p>
+                        <p>Maîtrisez le traitement de texte professionnel</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 1 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="excel">
+                <div class="formation-card" data-id="excel">
                     <img src="images/formation_excel.png" alt="Microsoft Excel">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Microsoft Excel</h3>
-                        <p>Maîtrisez les tableurs</p>
+                        <p>Tableaux, formules et analyse de données</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 1.5 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="windows">
+                <div class="formation-card" data-id="windows">
                     <img src="images/formation_windows.png" alt="Windows">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Windows</h3>
-                        <p>Système d'exploitation</p>
+                        <p>Système d'exploitation et configuration</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 1 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="informatique">
+                <div class="formation-card" data-id="informatique">
                     <img src="images/informaticien.png" alt="Informatique Générale">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Informatique Générale</h3>
-                        <p>Maîtrisez les bases de l'informatique</p>
+                        <p>Les bases essentielles de l'informatique</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 3 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="maintenance">
+                <div class="formation-card" data-id="maintenance">
                     <img src="images/personnes-reparant.jpg" alt="Maintenance">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Maintenance</h3>
-                        <p>Apprenez la réparation et maintenance</p>
+                        <p>Réparation et diagnostic d'équipements</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 6 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="infographie">
+                <div class="formation-card" data-id="infographie">
                     <img src="images/fomation_infographie.png" alt="Infographie">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Infographie</h3>
-                        <p>Créez des designs professionnels</p>
+                        <p>Design graphique avec Photoshop & Illustrator</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 4 mois</span>
                     </div>
-
                 </div>
-                <div class="training-card" data-id="ia">
+                <div class="formation-card" data-id="ia">
                     <img src="images/formation_ia.png" alt="Intelligence Artificielle">
-                    <div class="formation-texts">
+                    <div class="formation-info">
                         <h3>Intelligence Artificielle</h3>
-                        <p>Découvrez l'IA et ses applications</p>
+                        <p>IA, Machine Learning et applications</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 5 mois</span>
                     </div>
-
                 </div>
-
+                <div class="formation-card" data-id="drone">
+                    <img src="images/drone.jpg" alt="Pilotage Drone">
+                    <div class="formation-info">
+                        <h3>Pilotage Drone</h3>
+                        <p>Techniques de vol et photographie aérienne</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 3 mois</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -370,7 +316,6 @@
     </section>
     <!-- Map Section -->
     <div class="map-section">
-        <h3>Notre Localisation</h3>
         <div id="map" class="map-container"></div>
     </div>
     <!-- Modales -->
@@ -527,7 +472,34 @@
         </div>
     </footer>
 
+    <div class="whatsapp-chat-button">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <div class="whatsapp-chat-popup">
+        <div class="whatsapp-chat-header">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+            <div class="header-info">
+                <span class="header-title">Chattez avec nous sur WhatsApp</span>
+                <span class="header-status">Répond généralement en quelques minutes</span>
+            </div>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="whatsapp-chat-body">
+            <div class="message-bubble received">
+                Bonjour! Comment pouvons-nous vous aider aujourd'hui?
+            </div>
+        </div>
+        <div class="whatsapp-chat-footer">
+            <input type="text" placeholder="Écrivez un message..." class="message-input">
+            <button class="send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/whatsapp-chat.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
@@ -539,10 +511,44 @@
                 const lat = 9.53795;
                 const lng = -13.67729;
 
-                const map = L.map('map').setView([lat, lng], 16);
+                const map = L.map('map').setView([lat, lng], 17);
 
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                // Couche OpenStreetMap (Plan)
+                const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 19
+                });
+
+                // Couche Satellite (Esri World Imagery)
+                const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+                    maxZoom: 19
+                });
+
+                // Couche hybride (Satellite + Labels)
+                const hybridLayer = L.layerGroup([
+                    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                        maxZoom: 19
+                    }),
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        opacity: 0.4,
+                        maxZoom: 19
+                    })
+                ]);
+
+                // Ajouter la couche satellite par défaut
+                satelliteLayer.addTo(map);
+
+                // Contrôle des couches
+                const baseMaps = {
+                    "🗺️ Plan": streetLayer,
+                    "🛰️ Satellite": satelliteLayer,
+                    "🌍 Hybride": hybridLayer
+                };
+
+                L.control.layers(baseMaps, null, {
+                    position: 'topright',
+                    collapsed: false
                 }).addTo(map);
 
                 // Marqueur personnalisé

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/hero.css">
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/whatsapp-chat.css">
 </head>
 
 <body>
@@ -171,7 +172,33 @@
         </div>
     </footer>
 
+    <div class="whatsapp-chat-button">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <div class="whatsapp-chat-popup">
+        <div class="whatsapp-chat-header">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+            <div class="header-info">
+                <span class="header-title">Chattez avec nous sur WhatsApp</span>
+                <span class="header-status">Répond généralement en quelques minutes</span>
+            </div>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="whatsapp-chat-body">
+            <div class="message-bubble received">
+                Bonjour! Comment pouvons-nous vous aider aujourd'hui?
+            </div>
+        </div>
+        <div class="whatsapp-chat-footer">
+            <input type="text" placeholder="Écrivez un message..." class="message-input">
+            <button class="send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
     <script src="../js/main.js"></script>
+    <script src="../js/whatsapp-chat.js"></script>
 </body>
 
 </html>

@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const trainingModal = document.getElementById('trainingModal');
-    const trainingCards = document.querySelectorAll('.training-card');
+    const trainingCards = document.querySelectorAll('.formation-card');
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
     trainingCards.forEach(card => {
