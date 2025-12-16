@@ -33,6 +33,7 @@
      grid-template-columns: 1fr 1fr;
      align-items: center;
      flex: 1;
+     padding-left: 90px;
  }
 
  .logo {
@@ -87,7 +88,7 @@
 
  .welcome-text {
      color: #ff8800;
-     font-size: 28px;
+     font-size: 38px;
      margin-bottom: 20px;
  }
 
