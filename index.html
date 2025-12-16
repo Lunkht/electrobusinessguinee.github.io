@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electro Business Guinee</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +14,8 @@
         .partenaire-card .partenaire-name {
             font-weight: bold;
             color: black;
-            font-size: 1.5em; /* J'ai ajouté une taille de police pour une meilleure visibilité */
+            font-size: 1.5em;
+            /* J'ai ajouté une taille de police pour une meilleure visibilité */
             text-align: center;
         }
     </style>
@@ -22,164 +23,165 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="ElectroBusinessGuinee Logo" class="logo-img">
-        </div>
-        <nav class="main-nav">
-            <a href="index.html">Accueil</a>
-            <a href="./pages/services.html">Services</a>
-            <a href="./pages/shop.html">Boutique</a>
-            <a href="./pages/trainings.html">Formations</a>
-            <a href="./pages/voyage.html">Voyage</a>
-            <a href="./pages/apropos.html">À Propos</a>
-            <a href="./pages/contact.html">Contact</a>
-        </nav>
-     
-    </header>
-
     <section class="hero">
-        <div class="hero-content">
-            <div class="welcome-text">Bienvenue à</div>
-            <h1>Electro Business Guinee</h1>
-            <div class="cta-buttons">
-                <button class="btn-primary">Commençons</button>
-                <a href="#video" class="btn-secondary">
-                    <div class="play-icon"></div>
-                    Regarder la vidéo
-                </a>
+        <header class="hero-header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="ElectroBusinessGuinee Logo" class="logo-img">
             </div>
-        </div>
-        
-       <div class="hero-image">
-            <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphique réseau neuronal">
-                <defs>
-                    <linearGradient id="nodeGradient" x1="0" x2="1">
-                        <stop offset="0%" stop-color="#6EE7F8"/>
-                        <stop offset="100%" stop-color="#4F46E5"/>
-                    </linearGradient>
-                    <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#A78BFA" />   <!-- Violet -->
-                        <stop offset="50%" stop-color="#4F46E5" />  <!-- Indigo -->
-                        <stop offset="100%" stop-color="#6EE7F8" /> <!-- Cyan -->
-                    </linearGradient>
-                    <linearGradient id="streamGradient" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#A78BFA" />
-                        <stop offset="100%" stop-color="#6EE7F8" />
-                    </linearGradient>
-                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                        <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
-                        <feMerge>
-                            <feMergeNode in="coloredBlur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                    </filter>
-                </defs>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="./pages/services.html">Services</a>
+                <a href="./pages/shop.html">Boutique</a>
+                <a href="./pages/trainings.html">Formations</a>
+                <a href="./pages/voyage.html">Voyage</a>
+                <a href="./pages/apropos.html">À Propos</a>
+                <a href="./pages/contact.html">Contact</a>
+            </nav>
+        </header>
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <div class="welcome-text">Bienvenue à</div>
+                <h1>Electro Business Guinee</h1>
+                <div class="cta-buttons">
+                    <button class="btn-primary">Commençons</button>
+                    <a href="#video" class="btn-secondary">
+                        <div class="play-icon"></div>
+                        Regarder la vidéo
+                    </a>
+                </div>
+            </div>
 
-                <!-- Animation de flux de données numériques -->
-                <g fill="url(#circuitGradient)" filter="url(#glow)">
-                    <script>
-                        const container = document.currentScript.parentNode;
-                        const numParticles = 50;
-                        for (let i = 0; i < numParticles; i++) {
-                            const particle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                            const r = Math.random() * 3 + 2; // Rayon entre 2 et 5 (au lieu de 1 à 3)
-                            const x = Math.random() * 500;
-                            const y = Math.random() * 500;
-                            const dur = Math.random() * 10 + 8; // Durée entre 8s et 18s (plus lent)
-                            const delay = Math.random() * -12; // Délai négatif pour un départ décalé
+            <div class="hero-image">
+                <svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Graphique réseau neuronal">
+                    <defs>
+                        <linearGradient id="nodeGradient" x1="0" x2="1">
+                            <stop offset="0%" stop-color="#6EE7F8" />
+                            <stop offset="100%" stop-color="#4F46E5" />
+                        </linearGradient>
+                        <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#A78BFA" /> <!-- Violet -->
+                            <stop offset="50%" stop-color="#4F46E5" /> <!-- Indigo -->
+                            <stop offset="100%" stop-color="#6EE7F8" /> <!-- Cyan -->
+                        </linearGradient>
+                        <linearGradient id="streamGradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#A78BFA" />
+                            <stop offset="100%" stop-color="#6EE7F8" />
+                        </linearGradient>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
 
-                            particle.setAttribute("r", r);
-                            particle.setAttribute("cx", x);
-                            particle.setAttribute("cy", y);
-                            
-                            const animate = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-                            animate.setAttribute("attributeName", "cy");
-                            animate.setAttribute("from", y - 100);
-                            animate.setAttribute("to", y + 100);
-                            animate.setAttribute("dur", `${dur}s`);
-                            animate.setAttribute("begin", `${delay}s`);
-                            animate.setAttribute("repeatCount", "indefinite");
-                            animate.setAttribute("values", `${y};${y + Math.random() * 100 - 50};${y}`);
-                            animate.setAttribute("keyTimes", "0;0.5;1");
+                    <!-- Animation de flux de données numériques -->
+                    <g fill="url(#circuitGradient)" filter="url(#glow)">
+                        <script>
+                            const container = document.currentScript.parentNode;
+                            const numParticles = 50;
+                            for (let i = 0; i < numParticles; i++) {
+                                const particle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                                const r = Math.random() * 3 + 2; // Rayon entre 2 et 5 (au lieu de 1 à 3)
+                                const x = Math.random() * 500;
+                                const y = Math.random() * 500;
+                                const dur = Math.random() * 10 + 8; // Durée entre 8s et 18s (plus lent)
+                                const delay = Math.random() * -12; // Délai négatif pour un départ décalé
 
-                            const animateOpacity = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-                            animateOpacity.setAttribute("attributeName", "opacity");
-                            animateOpacity.setAttribute("values", "0;0.8;0");
-                            animateOpacity.setAttribute("dur", `${dur}s`);
-                            animateOpacity.setAttribute("begin", `${delay}s`);
-                            animateOpacity.setAttribute("repeatCount", "indefinite");
+                                particle.setAttribute("r", r);
+                                particle.setAttribute("cx", x);
+                                particle.setAttribute("cy", y);
 
-                            particle.appendChild(animate);
-                            particle.appendChild(animateOpacity);
-                            container.appendChild(particle);
-                        }
-                    </script>
-                </g>
+                                const animate = document.createElementNS("http://www.w3.org/2000/svg", "animate");
+                                animate.setAttribute("attributeName", "cy");
+                                animate.setAttribute("from", y - 100);
+                                animate.setAttribute("to", y + 100);
+                                animate.setAttribute("dur", `${dur}s`);
+                                animate.setAttribute("begin", `${delay}s`);
+                                animate.setAttribute("repeatCount", "indefinite");
+                                animate.setAttribute("values", `${y};${y + Math.random() * 100 - 50};${y}`);
+                                animate.setAttribute("keyTimes", "0;0.5;1");
 
-            </svg>
+                                const animateOpacity = document.createElementNS("http://www.w3.org/2000/svg", "animate");
+                                animateOpacity.setAttribute("attributeName", "opacity");
+                                animateOpacity.setAttribute("values", "0;0.8;0");
+                                animateOpacity.setAttribute("dur", `${dur}s`);
+                                animateOpacity.setAttribute("begin", `${delay}s`);
+                                animateOpacity.setAttribute("repeatCount", "indefinite");
+
+                                particle.appendChild(animate);
+                                particle.appendChild(animateOpacity);
+                                container.appendChild(particle);
+                            }
+                        </script>
+                    </g>
+
+                </svg>
+            </div>
         </div>
         <section class="features">
-        <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
-                    <path d="M38 18L24 8L10 18V38L24 48L38 38V18Z" />
-                    <path d="M24 8V48" />
-                    <path d="M10 18L38 38" />
-                    <path d="M10 38L38 18" />
-                </svg>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                        <path d="M38 18L24 8L10 18V38L24 48L38 38V18Z" />
+                        <path d="M24 8V48" />
+                        <path d="M10 18L38 38" />
+                        <path d="M10 38L38 18" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Formation</h3>
+                    <p>Obtenir une certification reconue</p>
+                </div>
             </div>
-            <div class="feature-content">
-                <h3>Formation</h3>
-                <p>Obtenir une certification reconue</p>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="24" cy="24" r="18" />
+                        <path d="M24 12V24L32 28" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>100% Satisfait</h3>
+                    <p>Nous avons eux plus de 100% de Satisfation de la par de nos etudients</p>
+                </div>
             </div>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
-                    <circle cx="24" cy="24" r="18" />
-                    <path d="M24 12V24L32 28" />
-                </svg>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="24" cy="24" r="18" />
+                        <path d="M24 12V24" />
+                        <path d="M24 24L30 30" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Support 24/7</h3>
+                    <p>Contactez-nous 24 heures par jour</p>
+                </div>
             </div>
-            <div class="feature-content">
-                <h3>100% Satisfait</h3>
-                <p>Nous avons eux plus de 100% de Satisfation de la par de nos etudients</p>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
+                        <rect x="8" y="14" width="32" height="24" rx="2" />
+                        <path d="M8 22H40" />
+                        <circle cx="14" cy="28" r="1" fill="white" />
+                        <circle cx="20" cy="28" r="1" fill="white" />
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>100% De reusite</h3>
+                    <p>Nos cours vous offrents des opotunité dans les secteuts d'emboche</p>
+                </div>
             </div>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
-                    <circle cx="24" cy="24" r="18" />
-                    <path d="M24 12V24" />
-                    <path d="M24 24L30 30" />
-                </svg>
-            </div>
-            <div class="feature-content">
-                <h3>Support 24/7</h3>
-                <p>Contactez-nous 24 heures par jour</p>
-            </div>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2">
-                    <rect x="8" y="14" width="32" height="24" rx="2" />
-                    <path d="M8 22H40" />
-                    <circle cx="14" cy="28" r="1" fill="white" />
-                    <circle cx="20" cy="28" r="1" fill="white" />
-                </svg>
-            </div>
-            <div class="feature-content">
-                <h3>100% De reusite</h3>
-                <p>Nos cours vous offrents des opotunité dans les secteuts d'emboche</p>
-            </div>
-        </div>
-    </section>
+        </section>
     </section>
 
-  
+
 
     <!-- Section Services -->
-    <section class="services" id="services" >
+    <section class="services" id="services">
         <div class="container">
             <h2>Nos Services</h2>
             <p class="section-description">Découvrez notre gamme complète de services informatiques professionnels,
@@ -187,7 +189,7 @@
             <div class="services-grid">
                 <div class="service-card" data-id="maintenance">
                     <i class="fas fa-tools fa-3x"></i>
-                    <h3>Maintenance Informatique</h3>
+                    <h3>Maintenance Informatique Générale</h3>
                     <p>Réparation et maintenance d'ordinateurs et smartphones</p>
                 </div>
                 <div class="service-card" data-id="vente">
@@ -197,9 +199,10 @@
                 </div>
                 <div class="service-card" data-id="informatique">
                     <i class="fas fa-shopping-cart fa-3x"></i>
-                    <h3>Formation informatique Générale</h3>
+                    <h3>Formation informatique</h3>
                     <p>Maintriser les outils informatiques</p>
-                </div> <div class="service-card" data-id="voyage">
+                </div>
+                <div class="service-card" data-id="voyage">
                     <i class="fas fa-plane fa-3x"></i>
                     <h3>Assistance Voyage</h3>
                     <p>Obtention de visa et billets d'avion</p>
@@ -235,7 +238,7 @@
                     <h3>Électroménager</h3>
                     <p>Réparation et Maintenance</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -308,7 +311,7 @@
     </section>
 
     <!-- Témoignages Section -->
-    <section class="testimonials" id="testimonials" >
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2>Témoignages</h2>
             <p class="section-description">Découvrez ce que nos clients et étudiants disent de leur expérience avec
@@ -428,13 +431,13 @@
     </div>
 
     <!-- Partenaires Section -->
-    <section class="partenaires" id="partenaires" >
+    <section class="partenaires" id="partenaires">
         <div class="container">
             <h2>Nos Partenaires</h2>
             <p class="section-description">Nous collaborons avec des entreprises leaders pour vous offrir les meilleurs
                 services et formations.</p>
             <div class="partenaires-grid">
-                <div class="partenaire-card" >
+                <div class="partenaire-card">
                     <span class="partenaire-name">Vulsoft.inc</span>
                 </div>
                 <div class="partenaire-card">
@@ -450,15 +453,15 @@
             </div>
         </div>
     </section>
- <!-- Newsletter Section -->
-    <section class="newsletter" id="newsletter" >
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
         <div class="container">
             <h2>Newsletter</h2>
             <p class="section-description">Restez informé de nos dernières actualités, formations et offres spéciales en
                 vous abonnant à notre newsletter.</p>
             <div class="newsletter-content">
                 <form class="newsletter-form" action="#" method="POST">
-                 
+
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Votre email" required>
                     </div>
@@ -467,7 +470,7 @@
                         S'abonner
                     </button>
                 </form>
-               
+
             </div>
         </div>
     </section>
@@ -522,7 +525,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                  
+
                     <div class="social-links-footer">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
