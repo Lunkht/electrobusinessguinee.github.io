@@ -497,10 +497,6 @@ h6 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
 }
 
-.formation-icon {
-    /* Styles already defined in hero.css and are sufficient */
-}
-
 .formation-content h3 {
     color: var(--color-gray);
     margin-bottom: 15px;
