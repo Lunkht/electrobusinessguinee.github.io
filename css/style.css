@@ -425,7 +425,6 @@ h6 {
     align-items: flex-start;
     margin-bottom: 0;
     padding: 40px;
-    background-color: #fff;
     border-radius: 15px;
 }
 
@@ -488,7 +487,6 @@ h6 {
     align-items: flex-start;
     margin-bottom: 40px;
     padding: 0px;
-    background-color: #fff;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 40px;
