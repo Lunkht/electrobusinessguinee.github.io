@@ -79,7 +79,8 @@ h6 {
 
 .service-card h3,
 .training-card h3 {
-    font-family: 'Poppins', sans-serif; font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .service-card p,
@@ -202,7 +203,7 @@ h6 {
     background-color: var(--color-light-gray);
 }
 
-.services h2{
+.services h2 {
     text-align: left;
     margin-bottom: 50px;
     color: var(--color-white);
@@ -229,7 +230,6 @@ h6 {
 }
 
 .service-card {
-    background-color: var(--color-white);
     padding: 0px;
     border-radius: 2px;
     text-align: center;
@@ -303,7 +303,8 @@ h6 {
     border-radius: 1px;
     margin-bottom: 25px;
 }
-.fomation-texts {
+
+.formation-texts {
     padding: 0 20px 20px;
     flex-grow: 1;
     display: flex;
@@ -551,7 +552,9 @@ h6 {
     margin-bottom: 20px;
     font-size: 24px;
 }
-.about-section p, .about-section ul li {
+
+.about-section p,
+.about-section ul li {
     color: #555;
 }
 
@@ -582,18 +585,28 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    .services-details, .formations-details, .about-content {
+
+    .services-details,
+    .formations-details,
+    .about-content {
         padding: 40px 0;
     }
-    .service-item, .formation-item, .about-section {
+
+    .service-item,
+    .formation-item,
+    .about-section {
         flex-direction: column;
         padding: 25px;
     }
-    .service-icon, .formation-icon {
+
+    .service-icon,
+    .formation-icon {
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .service-content, .formation-content {
+
+    .service-content,
+    .formation-content {
         width: 100%;
     }
 }
@@ -1012,7 +1025,8 @@ h6 {
 
 .services h2,
 .trainings h2,
-.testimonials h2, .partenaires h2 {
+.testimonials h2,
+.partenaires h2 {
     text-align: left;
     margin-bottom: 20px;
     color: var(--color-gray);
@@ -1024,7 +1038,8 @@ h6 {
 
 .services h2::before,
 .trainings h2::before,
-.testimonials h2::before, .partenaires h2::before {
+.testimonials h2::before,
+.partenaires h2::before {
     content: '';
     position: absolute;
     left: 0;
@@ -1037,7 +1052,8 @@ h6 {
 
 .services h2::after,
 .trainings h2::after,
-.testimonials h2::after, .partenaires h2::after {
+.testimonials h2::after,
+.partenaires h2::after {
     display: none;
 }
 
