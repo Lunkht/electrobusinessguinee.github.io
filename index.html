@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <style>
         .partenaire-card .partenaire-name {
@@ -245,6 +247,7 @@
             </div>
         </div>
     </section>
+
     <!-- Formations Section -->
     <section class="trainings" id="trainings">
         <div class="container">
@@ -365,7 +368,11 @@
             </div>
         </div>
     </section>
-
+    <!-- Map Section -->
+    <div class="map-section">
+        <h3>Notre Localisation</h3>
+        <div id="map" class="map-container"></div>
+    </div>
     <!-- Modales -->
     <div class="modal" id="serviceModal">
         <div class="modal-content">
@@ -521,6 +528,37 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        // Initialisation de la carte Leaflet pour la section map
+        document.addEventListener('DOMContentLoaded', function () {
+            const mapContainer = document.getElementById('map');
+            if (mapContainer) {
+                // Coordonnées de Boulbinet, Conakry
+                const lat = 9.53795;
+                const lng = -13.67729;
+
+                const map = L.map('map').setView([lat, lng], 16);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                // Marqueur personnalisé
+                const marker = L.marker([lat, lng]).addTo(map);
+                marker.bindPopup(`
+                    <div style="text-align: center; padding: 10px;">
+                        <strong style="font-size: 16px; color: #e43104;">Electro Business Guinee</strong><br>
+                        <span style="color: #666;">Boulbinet, en face de Manden Couture</span><br>
+                        <span style="color: #666;">Conakry, Guinée</span><br>
+                        <br>
+                        <a href="tel:+224612334411" style="color: #14019d;">📞 +224 612 33 44 11</a>
+                    </div>
+                `).openPopup();
+            }
+        });
+    </script>
 </body>
 
 </html>
