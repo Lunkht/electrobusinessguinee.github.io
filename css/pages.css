@@ -65,6 +65,7 @@
 /* ========================================
    HEADER STYLES POUR LES PAGES INTERNES
    ======================================== */
+   
 body>header {
     display: flex;
     justify-content: space-between;
