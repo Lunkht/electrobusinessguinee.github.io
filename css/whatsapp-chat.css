@@ -123,6 +123,29 @@
     padding: 10px 15px;
     border-top: 1px solid #eee;
     background-color: #f0f2f5;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quick-replies {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.quick-reply {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 16px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quick-reply:hover {
+    background: #e5f7ee;
+    border-color: #25D366;
 }
 
 .whatsapp-chat-footer .message-input {

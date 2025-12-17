@@ -117,6 +117,25 @@
             </div>
         </section>
     </section>
+    <!-- Startup Section -->
+    <section class="startup-section" id="ebg">
+        <div class="container">
+            <div class="startup-content">
+                <h2>EBG</h2>
+                <p>
+                    Electro Business Guinée (EBG) est un startup orienté vers l’impact,
+                    qui accompagne les jeunes et les professionnels à développer des compétences
+                    utiles et certifiantes en informatique, design, IA et marketing digital.
+                    Nous créons des parcours pratiques, des projets réels et un réseau d’entraide
+                    pour accélérer l’employabilité et l’innovation en Guinée.
+                </p>
+                <a href="./pages/apropos.html" class="cta-button">En savoir plus</a>
+            </div>
+            <div class="startup-image">
+                <img src="images/elect2_Plan de travail 1.svg" alt="EBG Startup">
+            </div>
+        </div>
+    </section>
 
 
 
@@ -191,11 +210,9 @@
     <section class="formations" id="formations">
         <div class="container">
             <h2>Formations</h2>
-            <p class="section-description">Développez vos compétences avec nos programmes de formation professionnelle
-                adaptés à tous les niveaux.</p>
             <div class="formations-grid">
                 <div class="formation-card" data-id="word">
-                    <img src="images/formation word.png" alt="Microsoft Word">
+                    <div class="formation-icon"><i class="fas fa-file-word"></i></div>
                     <div class="formation-info">
                         <h3>Microsoft Word</h3>
                         <p>Maîtrisez le traitement de texte professionnel</p>
@@ -203,7 +220,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="excel">
-                    <img src="images/formation_excel.png" alt="Microsoft Excel">
+                    <div class="formation-icon"><i class="fas fa-file-excel"></i></div>
                     <div class="formation-info">
                         <h3>Microsoft Excel</h3>
                         <p>Tableaux, formules et analyse de données</p>
@@ -211,7 +228,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="windows">
-                    <img src="images/formation_windows.png" alt="Windows">
+                    <div class="formation-icon"><i class="fab fa-windows"></i></div>
                     <div class="formation-info">
                         <h3>Windows</h3>
                         <p>Système d'exploitation et configuration</p>
@@ -219,7 +236,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="informatique">
-                    <img src="images/informaticien.png" alt="Informatique Générale">
+                    <div class="formation-icon"><i class="fas fa-desktop"></i></div>
                     <div class="formation-info">
                         <h3>Informatique Générale</h3>
                         <p>Les bases essentielles de l'informatique</p>
@@ -227,7 +244,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="maintenance">
-                    <img src="images/personnes-reparant.jpg" alt="Maintenance">
+                    <div class="formation-icon"><i class="fas fa-tools"></i></div>
                     <div class="formation-info">
                         <h3>Maintenance</h3>
                         <p>Réparation et diagnostic d'équipements</p>
@@ -235,7 +252,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="infographie">
-                    <img src="images/fomation_infographie.png" alt="Infographie">
+                    <div class="formation-icon"><i class="fas fa-paint-brush"></i></div>
                     <div class="formation-info">
                         <h3>Infographie</h3>
                         <p>Design graphique avec Photoshop & Illustrator</p>
@@ -243,7 +260,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="ia">
-                    <img src="images/formation_ia.png" alt="Intelligence Artificielle">
+                    <div class="formation-icon"><i class="fas fa-robot"></i></div>
                     <div class="formation-info">
                         <h3>Intelligence Artificielle</h3>
                         <p>IA, Machine Learning et applications</p>
@@ -251,7 +268,7 @@
                     </div>
                 </div>
                 <div class="formation-card" data-id="drone">
-                    <img src="images/drone.jpg" alt="Pilotage Drone">
+                    <div class="formation-icon"><i class="fas fa-drone"></i></div>
                     <div class="formation-info">
                         <h3>Pilotage Drone</h3>
                         <p>Techniques de vol et photographie aérienne</p>
@@ -472,7 +489,7 @@
         </div>
     </footer>
 
-    <div class="whatsapp-chat-button">
+    <div class="whatsapp-chat-button" data-phone="+224612334411">
         <i class="fab fa-whatsapp"></i>
     </div>
 
@@ -508,8 +525,8 @@
             const mapContainer = document.getElementById('map');
             if (mapContainer) {
                 // Coordonnées de Boulbinet, Conakry
-                const lat = 9.53795;
-                const lng = -13.67729;
+                const lat = 9.507768;
+                const lng = -13.713629;
 
                 const map = L.map('map').setView([lat, lng], 17);
 
@@ -522,19 +539,15 @@
                 // Couche Satellite (Esri World Imagery)
                 const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
                     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-                    maxZoom: 19
+                    maxZoom: 19,
+                    maxNativeZoom: 17,
+                    errorTileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                 });
-
-                // Couche hybride (Satellite + Labels)
-                const hybridLayer = L.layerGroup([
-                    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-                        maxZoom: 19
-                    }),
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        opacity: 0.4,
-                        maxZoom: 19
-                    })
-                ]);
+                satelliteLayer.on('tileerror', function () {
+                    if (!map.hasLayer(streetLayer)) {
+                        streetLayer.addTo(map);
+                    }
+                });
 
                 // Ajouter la couche satellite par défaut
                 satelliteLayer.addTo(map);
@@ -542,8 +555,7 @@
                 // Contrôle des couches
                 const baseMaps = {
                     "🗺️ Plan": streetLayer,
-                    "🛰️ Satellite": satelliteLayer,
-                    "🌍 Hybride": hybridLayer
+                    "🛰️ Satellite": satelliteLayer
                 };
 
                 L.control.layers(baseMaps, null, {
