@@ -358,6 +358,30 @@ h6 {
     }
 }
 
+/* Mobile adjustments for Services */
+@media (max-width: 768px) {
+    .services {
+        padding: 40px 16px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .service-card {
+        padding: 12px;
+    }
+    .service-card h3 {
+        font-size: 16px;
+    }
+    .service-card p {
+        font-size: 13px;
+    }
+    .service-card i,
+    .service-card .fa-3x {
+        font-size: 32px !important;
+    }
+}
+
 /* Startup Section */
 .startup-section {
     padding: 80px 0;
