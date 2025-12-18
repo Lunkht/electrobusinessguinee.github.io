@@ -126,4 +126,37 @@ document.addEventListener('DOMContentLoaded', function () {
             event.target.style.display = 'none';
         }
     });
+
+    const selectorGroups = [
+        'section',
+        '.service-card',
+        '.formation-card',
+        '.service-item',
+        '.formation-item',
+        '.about-section',
+        '.contact-item',
+        '.map-section',
+        '.newsletter',
+        '.testimonials',
+        '.testimonial-card',
+        '.startup-content',
+        '.startup-image'
+    ];
+    const targets = document.querySelectorAll(selectorGroups.join(','));
+    targets.forEach(el => {
+        const isImageSide = el.classList.contains('startup-image');
+        const isCard = el.classList.contains('service-card') || el.classList.contains('formation-card') || el.classList.contains('testimonial-card');
+        if (isImageSide) el.classList.add('reveal-right');
+        else if (isCard) el.classList.add('reveal-zoom');
+        else el.classList.add('reveal');
+    });
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                io.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    targets.forEach(el => io.observe(el));
 });

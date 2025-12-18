@@ -373,7 +373,7 @@ h6 {
 
 .startup-content h2 {
     color: var(--color-blue);
-    font-size: 42px;
+    font-size: 72px;
     margin-bottom: 15px;
 }
 
@@ -391,6 +391,8 @@ h6 {
     border-radius: 16px;
     padding: 10px;
 }
+
+ 
 
 @media (max-width: 768px) {
     .startup-section .container {
@@ -911,6 +913,40 @@ h6 {
 
 .service-card.animate {
     animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal.in-view {
+    opacity: 1;
+    transform: none;
+}
+.reveal-left {
+    transform: translateX(-32px);
+}
+.reveal-right {
+    transform: translateX(32px);
+}
+.reveal-zoom {
+    transform: scale(0.96);
+}
+.reveal-left.in-view,
+.reveal-right.in-view,
+.reveal-zoom.in-view {
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-zoom {
+        transition: none;
+    }
 }
 
 .testimonials {

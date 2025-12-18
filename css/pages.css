@@ -127,7 +127,6 @@ body>header nav.main-nav a:hover::after {
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -262,7 +261,6 @@ body>header nav.main-nav a:hover::after {
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .member:hover {
@@ -342,7 +340,6 @@ body>header nav.main-nav a:hover::after {
     padding: 25px;
     background: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
@@ -383,7 +380,6 @@ body>header nav.main-nav a:hover::after {
     background: #ffffff;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form-section h3,
@@ -438,7 +434,6 @@ body>header nav.main-nav a:hover::after {
     outline: none;
     border-color: #e43104;
     background-color: #ffffff;
-    box-shadow: 0 0 0 4px rgba(228, 49, 4, 0.1);
 }
 
 .contact-form .submit-button {
@@ -464,7 +459,6 @@ body>header nav.main-nav a:hover::after {
     height: 350px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ========================================
@@ -483,7 +477,6 @@ body>header nav.main-nav a:hover::after {
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
@@ -556,7 +549,6 @@ body>header nav.main-nav a:hover::after {
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
