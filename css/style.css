@@ -154,6 +154,9 @@ h6 {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
     .main-header .container {
         flex-wrap: wrap;
     }
@@ -355,6 +358,11 @@ h6 {
 @media (max-width: 600px) {
     .formations h2 {
         font-size: 28px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
     }
 }
 
