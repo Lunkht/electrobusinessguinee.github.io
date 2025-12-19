@@ -358,6 +358,55 @@ h6 {
     }
 }
 
+@media (max-width: 768px) {
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+        padding: 0 8px;
+    }
+    .formations-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .formation-card {
+        padding: 16px 14px;
+        border-radius: 14px;
+    }
+    .formation-card .formation-icon {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        margin-bottom: 14px;
+        border-width: 3px;
+    }
+    .formation-info h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .formation-info p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .duration {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formation-card .formation-icon {
+        width: 72px;
+        height: 72px;
+        padding: 8px;
+        border-width: 3px;
+    }
+    .formation-info h3 {
+        font-size: 16px;
+    }
+    .formation-info p {
+        font-size: 12px;
+    }
+}
+
 /* Mobile adjustments for Services */
 @media (max-width: 768px) {
     .services {

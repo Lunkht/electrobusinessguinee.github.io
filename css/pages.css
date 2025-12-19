@@ -696,3 +696,57 @@ body>header nav.main-nav a:hover::after {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 768px) {
+    .formations-details {
+        padding: 48px 0;
+    }
+    .formation-item {
+        gap: 18px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+    .formation-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+    }
+    .formation-icon i {
+        font-size: 28px;
+    }
+    .formation-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .formation-content p {
+        font-size: 14px;
+    }
+    .formation-content ul li {
+        padding: 6px 0 6px 22px;
+    }
+    .formation-content .duration {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formation-item {
+        gap: 14px;
+        padding: 16px;
+    }
+    .formation-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+    }
+    .formation-icon i {
+        font-size: 24px;
+    }
+    .formation-content h3 {
+        font-size: 18px;
+    }
+    .formation-content p {
+        font-size: 13px;
+    }
+}
