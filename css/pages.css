@@ -77,8 +77,9 @@ body>header {
 }
 
 body>header .logo-img {
-    height: 50px;
-    border-radius: 50%;
+    height: clamp(32px, 6vw, 56px);
+    width: auto;
+    display: block;
 }
 
 body>header nav.main-nav {

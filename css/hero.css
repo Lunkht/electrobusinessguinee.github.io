@@ -75,10 +75,11 @@
      gap: 15px;
  }
 
- .logo-img {
-     height: 40px;
-     width: auto;
- }
+.logo-img {
+    height: clamp(32px, 6vw, 56px);
+    width: auto;
+    display: block;
+}
 
  .logo h1 {
      margin: 0;
